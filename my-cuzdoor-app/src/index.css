@@ -14,3 +14,10 @@
 .scrollbar-hide::-webkit-scrollbar {
     display: none;  /* Chrome, Safari and Opera */
 }
+
+/* Make the app use the requested background color in dark mode */
+@layer base {
+    .dark body {
+        background-color: #272525;
+    }
+}

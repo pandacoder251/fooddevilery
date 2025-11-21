@@ -291,17 +291,13 @@ export default function App() {
         <div className="flex flex-col items-start animate-in slide-in-from-top duration-500">
             {/* Logo Image Handling */}
             <div className="h-8 mb-1 flex items-center">
-               {!logoError ? (
+               {!logoError && (
                    <img 
                       src={isDark ? "/public/darklogo.jpg" : "/public/lightlogo.jpg"} 
                       alt="Cuzdoor Logo" 
                       className="h-full w-auto object-contain"
                       onError={() => setLogoError(true)}
                     />
-               ) : (
-                   <span className="text-xl font-extrabold tracking-tighter text-orange-500">
-                      CUZ<span className={isDark ? 'text-white' : 'text-gray-800'}>DOOR</span>
-                   </span>
                )}
             </div>
             

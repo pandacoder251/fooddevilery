@@ -2,7 +2,6 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   MapPin, 
   Search, 
-  Utensils, 
   User, 
   Home, 
   Moon, 
@@ -13,6 +12,7 @@ import {
   Star, 
   Clock,
   Flame,
+  Utensils,
   Banknote,
   CreditCard,
   X,

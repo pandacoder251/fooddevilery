@@ -277,7 +277,7 @@ export default function App() {
     : "bg-gray-50 text-gray-800";
 
   const cardClasses = isDark 
-    ? "bg-gray-800 border-gray-700" 
+    ? "bg-#272525 border-gray-700" 
     : "bg-white border-gray-100 shadow-sm";
 
   const inputClasses = `w-full p-3 rounded-xl border outline-none transition-all ${isDark ? 'bg-gray-700 border-gray-600 focus:border-orange-500 text-white' : 'bg-gray-50 border-gray-200 focus:border-orange-500 text-gray-900'}`;

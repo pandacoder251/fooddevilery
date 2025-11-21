@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   MapPin, 
   Search, 
-  ShoppingBag, 
+  Utensils, 
   User, 
   Home, 
   Moon, 
@@ -13,7 +13,6 @@ import {
   Star, 
   Clock,
   Flame,
-  Utensils,
   Banknote,
   CreditCard,
   X,
@@ -478,7 +477,7 @@ export default function App() {
                 
                 {cartItems.length === 0 ? (
                     <div className="flex flex-col items-center justify-center py-12 opacity-50 animate-in fade-in zoom-in duration-500">
-                        <ShoppingBag size={64} className="mb-4 text-gray-300" />
+                        <Utensils size={64} className="mb-4 text-gray-300" />
                         <p>Your plate is empty!</p>
                         <button onClick={() => setActiveTab('home')} className="mt-4 text-orange-500 font-bold">Browse Food</button>
                     </div>
@@ -578,7 +577,7 @@ export default function App() {
       <div className={`fixed bottom-0 left-0 right-0 h-16 border-t flex items-center justify-around z-50 ${isDark ? 'bg-gray-900 border-gray-800' : 'bg-white border-gray-100 shadow-[0_-5px_10px_rgba(0,0,0,0.02)]'}`}>
         {[
           { id: 'home', icon: Home, label: 'Home' },
-          { id: 'cart', icon: ShoppingBag, label: 'Plate', badge: cartItems.reduce((a,c) => a+c.count, 0) },
+          { id: 'cart', icon: Utensils, label: 'Plate', badge: cartItems.reduce((a,c) => a+c.count, 0) },
           { id: 'profile', icon: User, label: 'Profile' }
         ].map(tab => (
           <button

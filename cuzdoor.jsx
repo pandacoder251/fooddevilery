@@ -86,20 +86,17 @@ const Header = ({ theme, toggleTheme, setActiveTab, cartItemCount }) => {
                 >
                     {/* Using the provided logo image names as sources for better visual resemblance */}
                     <img 
-                        src={"WhatsApp Image 2025-11-21 at 11.53.34_bd777417.jpg"} 
+                        src={"/assets/logolight.jpg"} 
                         alt="Cuzdoor Logo" 
                         className="h-8 md:h-10 dark:hidden" 
                         onError={(e) => { e.target.style.display = 'none'; }}
                     />
                     <img 
-                        src={"WhatsApp Image 2025-11-21 at 11.53.33_a9db11e3.jpg"} 
+                        src={"/assets/logodark.jpg"} 
                         alt="Cuzdoor Logo (Dark)" 
                         className="h-8 md:h-10 hidden dark:block" 
                         onError={(e) => { e.target.onerror = null; e.target.style.display = 'none'; }}
                     />
-                    <h1 style={LogoStyle} className="text-xl md:text-2xl text-red-600 dark:text-red-400">
-                        CUZDOOR
-                    </h1>
                 </div>
 
                 {/* Desktop Navigation */}

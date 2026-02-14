@@ -3,6 +3,7 @@
 A modern, responsive food delivery web application built with React, Vite, and Tailwind CSS. CuzDoor is designed for campus food delivery, allowing students to order food from various restaurants and hostels.
 
 ![CuzDoor Logo](my-cuzdoor-app/public/lightlogo.jpg)
+![CuzDoor Logo](my-cuzdoor-app/public/darklogo.jpg)
 
 ## Features
 
